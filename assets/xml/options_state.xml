@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<include id="ui_globals"/>
+	
+	<chrome id="optionsmenu" x="25%" y="15%" width="50%" height="70%" group="optionsmenu" />
+		
+	<button x="optionsmenu.width*0.25" y="optionsmenu.height*0.8" width="25%" height="10%" id="back_button" label="Back" group="optionsmenu">
+		<param type="int" value="0"/>
+		<anchor x="optionsmenu.left" y="optionsmenu.top" />
+		<text use_def="vera10" color="0xffffff">
+			<color id="over" value="0xffff00"/>
+		</text>
+	</button>  
+	
+	
+</data>

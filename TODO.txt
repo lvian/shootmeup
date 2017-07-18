@@ -1,0 +1,66 @@
+SHMUPs to check
+- Undeadline , mega drive
+
+// var scanline:BitmapData = new BitmapData(FlxG.width - 20, 1, true, 0x88001100);
+
+## REMEMBER ##
+-Default behaviour for kill() is exists and alive  = false;
+
+## Done ##
+- different types of fire - OK
+- 3 lives, respawn with invulnerability - OK
+- Add basic shield - OK
+- Chaser Enemy - OK (needs explosion behaviour later)
+- Separate base enemy from specialized enemies - OKS
+- Create Missile behaviour - OK
+- Shooter enemy behaviour - OK
+- Fix getAsset bug - OK
+- Create weapon upgrade power up - OK
+- Create missile weapon power up - OK 
+- Create bullet weapon power up - OK
+- Create laser weapon power up - OK
+- Create respawn method for enemies(reset hitpoints etc) - OK (did this in the kill method)
+- Change collision check to use groups of the same type - Partially OK
+- Improve missile behaviour (add seeking missile or not option , make ready as player weapon)
+- Missile follow for a some seconds then goes straight - OK
+- Create player missilefire() levels - OK
+- New Enemy, more hitpoints, slower, fire more shots) hardShooter - OK
+- Basic Level Structure ( duration, spawns, begin, end and boss) - OK
+- Create structure for multi dialogs - OK
+- Create base boss class
+- Multi sprited enemies , FlxSpriteGroup fix position bug - OK
+- Created a bunch of enemy move behaviours in order to create chain groups, just create a few with the same parameters - OK
+- Level Spawn System - OK
+- Enemies killed can drop powerups - OK
+- Create temporary spawns for a 5 minutes levels - OK
+- missile explosion animation - OK
+- enemy explosion animation - OK 
+- bullets hit explosion animation - OK
+-enemybullets trace, remove particles at end - OK
+-enemy bullets explosion - OK
+
+## TODO ##
+
+
+- 2 hits death , shield acts like two extra health
+- Show current weapon icon at bottom
+- Show weapon power level at the bottom
+- Think about a special skill (charges or reload time)
+- Improve first boss behaviour
+
+
+
+## FUTURE ##
+- Laser behaviour
+- Conferir algumas colisões a cada 1s para fazer danos temporizados(ship collisions)
+- Update dialog code, create its own class
+- Create a invul timer for enemies when colliding with the player ship, can't affect shots
+
+
+ ## BUGS ##
+ - Gold and menu button not showing in the GUIGROUP
+ - Crash related to score after game restarts (can't set text)
+ - Menu Button not showing, wrong sort order
+ - Missiles are not recycling correctly - OK( flight timer bug)
+ - Zero missile flight timer after recycle - OK
+ - Some Missiles get recycled with wrong rotation - OK

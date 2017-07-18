@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<include id="ui_globals"/>
+	
+	
+	<sprite x="0" y="0" width="100%" height="100%" visible="false" id="container" />
+	
+	<button x="0" y="0" width="5%" height="5%" id="back_button" label="Menu" group="menu"  visible="true">
+		<param type="string" value="back" />
+		<anchor    x-flush="left" y-flush="bottom"  x="container.right" y="container.top"/>
+		<text use_def="vera10" color="0xffffff">
+			<color id="over" value="0xffff00"/>
+		</text>
+		
+		<!-- <graphic name="all" image="assets/images/sheet_button.png" slice9="6,6,12,12"/> -->
+	</button>  
+	<chrome id="dialogwindow" x="20%" y="20%" width="60%" height="30%" visible="true" />
+			
+	
+	<sprite id="lives_icon" x="2%" y="90%" width="4%" height="5%"   color="0xff00ff">
+	</sprite>
+	
+	<text id="lives"  text="x3" x="7%" y="90%" width="5%" color="0xFF808080" align="left" use_def="vera10" size="16"  visible="true">
+	</text>
+	
+	
+	<sprite id="weapon_bullet_icon" x="13%" y="90%" width="4%" height="5%"  color="0xff0000">
+		
+	</sprite>
+	<sprite id="weapon_missile_icon" x="13%" y="90%" width="4%" height="5%"  color="0x00ff00">
+		
+	</sprite>
+	<sprite id="weapon_laser_icon" x="13%" y="90%" width="4%" height="5%"   color="0x0000ff">
+		
+	</sprite>
+	
+	<text id="weaponpower"  text="x1" x="18%" y="90%" width="5%" color="0xFF808080" align="left" use_def="vera10" size="16"  visible="true">
+		
+	</text>
+	
+	
+	
+	
+	<text id="scoretext" text="0" color="0xffffd700" align="right" use_def="vera10" size="16"  visible="true">
+		<anchor  x-flush="right" y-flush="bottom" x="container.right" y="container.bottom"/>
+	</text>
+	
+</data>
